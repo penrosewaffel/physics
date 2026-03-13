@@ -47,7 +47,7 @@ The 4-fold degeneracy of the eigenvalue spectrum naturally explains why there ar
 
 ```bash
 python elliptic_curve_predictions.py
-
+```
 
 The script will load the saved data, compute the fundamental constants, and display a comparison with experimental values.
 
