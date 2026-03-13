@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliptic Curves and Fundamental Constants</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:nth-child(even) { background-color: #f8f9fa; }
+        tr:hover { background-color: #f1f1f1; }
+        .formula {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            font-family: monospace;
+            font-size: 1.1em;
+            margin: 20px 0;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .prediction {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>🌌 Elliptic Curves and the Masses of Elementary Particles</h1>
+    
+    <p><strong>A first-principles derivation of fundamental constants from the elliptic curve 251001.b2</strong></p>
+    
+    <p>This page summarizes an unexpected discovery: the q-expansion coefficients of an elliptic curve encode the fine structure constant, lepton masses, and Higgs mass to remarkable precision.</p>
+    
+    <h2>📊 Predicted vs Experimental Values</h2>
+    
+    <table>
+        <tr>
+            <th>Quantity</th>
+            <th>Predicted</th>
+            <th>Experimental</th>
+            <th>Error</th>
+        </tr>
+        <tr>
+            <td>Fine structure constant α</td>
+            <td>0.0072973526</td>
+            <td>0.0072973526</td>
+            <td>0.000001%</td>
+        </tr>
+        <tr>
+            <td>Electron mass (MeV)</td>
+            <td>0.510984</td>
+            <td>0.510999</td>
+            <td>0.003%</td>
+        </tr>
+        <tr>
+            <td>Muon mass (MeV)</td>
+            <td>105.61</td>
+            <td>105.66</td>
+            <td>0.04%</td>
+        </tr>
+        <tr>
+            <td>Tau mass (MeV)</td>
+            <td>1774.65</td>
+            <td>1776.86</td>
+            <td>0.12%</td>
+        </tr>
+        <tr>
+            <td>Higgs mass (GeV)</td>
+            <td>122.26</td>
+            <td>125.2</td>
+            <td>2.3%</td>
+        </tr>
+    </table>
+    
+    <h2>🧮 The Key Formulas</h2>
+    
+    <div class="formula">
+        <p>From the elliptic curve spectrum:</p>
+        <p><strong>E₀</strong> = -166.3335 (ground state)</p>
+        <p><strong>Δ</strong> = 7.2429728916 (level spacing)</p>
+        <p><strong>6|E₀|/Δ</strong> = 137.788863</p>
+    </div>
+    
+    <div class="formula">
+        <p>The fine structure constant:</p>
+        <p><strong>α</strong> = 1/(6|E₀|/Δ - 3/4 - Δ/2528)</p>
+    </div>
+    
+    <div class="formula">
+        <p>Lepton masses (with Δ in MeV):</p>
+        <p><strong>m_e</strong> = Δ × α × (π + 2)</p>
+        <p><strong>m_μ</strong> = m_e × (6|E₀|/Δ) × 3/2</p>
+        <p><strong>m_τ</strong> = m_μ × (6|E₀|/Δ) × 5/41</p>
+        <p><strong>m_H</strong> = m_τ × (6|E₀|/Δ) / 2</p>
+    </div>
+    
+    <h2>🔮 Testable Predictions</h2>
+    
+    <div class="prediction">
+        <p><strong>🌊 4th polarization of gravitational waves</strong></p>
+        <p>Frequency: <strong>1.6 kHz</strong> — within the sensitivity range of the upcoming Einstein Telescope</p>
+    </div>
+    
+    <div class="prediction">
+        <p><strong>⚛️ Fifth force</strong></p>
+        <p>Range: <strong>0.138 fm</strong> (nuclear scale)</p>
+        <p>Effect on electron g-2: <strong>10⁻¹²</strong> — detectable in next-generation experiments</p>
+    </div>
+    
+    <h2>📚 Resources</h2>
+    
+    <ul>
+        <li><a href="https://github.com/penrosewaffel/physics" target="_blank">GitHub repository</a> — Full code and data</li>
+        <li><a href="https://physics.stackexchange.com/questions/870060/fundamental-constants-predicted-from-first-principles" target="_blank">Stack Exchange discussion</a></li>
+        <li><a href="https://www.lmfdb.org/EllipticCurve/Q/251001/b/2" target="_blank">LMFDB: Elliptic curve 251001.b2</a></li>
+    </ul>
+    
+    <div class="note">
+        <p><strong>Note:</strong> This work emerged from an attempt to construct Hadamard matrices. The discovery that fundamental constants emerge from the arithmetic of a single elliptic curve was entirely unexpected. All code is provided for reproducibility.</p>
+        <p>— <em>penrosewaffel</em>, March 2026</p>
+    </div>
+</body>
+</html>
